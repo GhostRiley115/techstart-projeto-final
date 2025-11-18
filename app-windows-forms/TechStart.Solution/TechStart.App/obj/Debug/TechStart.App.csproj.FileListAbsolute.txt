@@ -1,0 +1,11 @@
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\bin\Debug\TechStart.App.exe.config
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\bin\Debug\TechStart.App.exe
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\bin\Debug\TechStart.App.pdb
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.csproj.AssemblyReference.cache
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmSplash.resources
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.Properties.Resources.resources
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.csproj.GenerateResource.cache
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.exe
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.pdb
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmLogin.resources
