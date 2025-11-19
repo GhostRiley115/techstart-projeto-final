@@ -8,11 +8,55 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.IO;
 
 namespace TechStart.App
 {
     public partial class FrmLogin : Form
     {
+        private bool ValidarLogin(string usuario, string senha)
+        {
+            // Caminho do arquivo usuarios.txt na pasta "dados"
+            string caminhoArquivo = Path.Combine(Application.StartupPath, "dados", "usuarios.txt");
+
+            if (!File.Exists(caminhoArquivo))
+            {
+                MessageBox.Show(
+                    "Arquivo de usuários não encontrado.\nVerifique a pasta 'dados'.",
+                    "Erro",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+                return false;
+            }
+
+            // Lê todas as linhas do arquivo
+            string[] linhas = File.ReadAllLines(caminhoArquivo);
+
+            foreach (string linha in linhas)
+            {
+                if (string.IsNullOrWhiteSpace(linha))
+                    continue;
+
+                string[] partes = linha.Split(';');
+
+                if (partes.Length < 2)
+                    continue;
+
+                string usuarioArquivo = partes[0].Trim();
+                string senhaArquivo = partes[1].Trim();
+
+                // Comparação: usuário sem case sensitive, senha exata
+                if (usuario.Equals(usuarioArquivo, StringComparison.OrdinalIgnoreCase) &&
+                    senha == senhaArquivo)
+                {
+                    return true; // achou usuário/senha válidos
+                }
+            }
+
+            // Se chegou aqui, nada bateu
+            return false;
+        }
         public FrmLogin()
         {
             
@@ -29,7 +73,54 @@ namespace TechStart.App
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            string usuario = txtUser.Text.Trim();
+            string senha = txtPassword.Text.Trim();
+            lblErro.Visible = false;
+            lblErro.Text = string.Empty;
 
+            if (string.IsNullOrEmpty(usuario) && string.IsNullOrEmpty(senha))
+            {
+                lblErro.Text = "Digite o usuário e a senha.";
+                lblErro.Visible = true;
+
+                txtUser.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(usuario))
+            {
+                lblErro.Text = "Digite o usuário.";
+                lblErro.Visible = true;
+
+                txtUser.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(senha))
+            {
+                lblErro.Text = "Digite sua senha.";
+                lblErro.Visible = true;
+
+                txtPassword.Focus();
+                return;
+            }
+
+            // daqui pra baixo continua igual
+            if (ValidarLogin(usuario, senha))
+            {
+                FrmPrincipal principal = new FrmPrincipal();
+                principal.FormClosed += (s, args) => this.Close();
+                principal.Show();
+                this.Hide();
+            }
+            else
+            {
+                lblErro.Text = "Usuário ou senha inválidos.";
+                lblErro.Visible = true;
+
+                txtPassword.Clear();
+                txtPassword.Focus();
+            }
         }
 
         private void chkMostrarSenha_CheckedChanged(object sender, EventArgs e)
@@ -70,7 +161,7 @@ namespace TechStart.App
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-         
+            txtUser.Focus();
         }
 
         private void lnkEsqueciSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -81,6 +172,29 @@ namespace TechStart.App
         private void pnlLogin_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void picLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite teclas de controle (Backspace, Delete, Tab, etc.)
+            if (char.IsControl(e.KeyChar))
+                return;
+
+            // Permite letras e números
+            if (char.IsLetterOrDigit(e.KeyChar))
+                return;
+
+            // Opcional: permitir underline e ponto
+            if (e.KeyChar == '.')
+                return;
+
+            // Se não passou em nenhuma condição acima, bloqueia
+            e.Handled = true;
         }
     }
 }

@@ -21,3 +21,4 @@ C:\Users\Clayton\Desktop\Forms backup\techstart-projeto-final\app-windows-forms\
 C:\Users\Clayton\Desktop\Forms backup\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.exe
 C:\Users\Clayton\Desktop\Forms backup\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.pdb
 C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\bin\Debug\dados\Usuarios.txt
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmPrincipal.resources

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFrase = new System.Windows.Forms.Label();
             this.pnlBrand = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -45,28 +45,29 @@
             this.lnkEsqueciSenha = new System.Windows.Forms.LinkLabel();
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lblErro = new System.Windows.Forms.Label();
             this.pnlBrand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblFrase
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(37, 439);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 78);
-            this.label1.TabIndex = 94;
-            this.label1.Text = "Conectando ideias, impulsionando eventos.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblFrase.BackColor = System.Drawing.Color.Transparent;
+            this.lblFrase.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrase.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFrase.Location = new System.Drawing.Point(37, 439);
+            this.lblFrase.Name = "lblFrase";
+            this.lblFrase.Size = new System.Drawing.Size(319, 78);
+            this.lblFrase.TabIndex = 94;
+            this.lblFrase.Text = "Conectando ideias, impulsionando eventos.";
+            this.lblFrase.Click += new System.EventHandler(this.label1_Click);
             // 
             // pnlBrand
             // 
             this.pnlBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(46)))), ((int)(((byte)(90)))));
             this.pnlBrand.Controls.Add(this.picLogo);
-            this.pnlBrand.Controls.Add(this.label1);
+            this.pnlBrand.Controls.Add(this.lblFrase);
             this.pnlBrand.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlBrand.Location = new System.Drawing.Point(0, 0);
             this.pnlBrand.Name = "pnlBrand";
@@ -84,6 +85,7 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 1;
             this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // lblTitulo
             // 
@@ -127,6 +129,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(351, 35);
             this.txtUser.TabIndex = 1;
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             // 
             // lblPassword
             // 
@@ -203,12 +206,12 @@
             this.lnkEsqueciSenha.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(233)))));
             this.lnkEsqueciSenha.AutoSize = true;
             this.lnkEsqueciSenha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnkEsqueciSenha.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkEsqueciSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkEsqueciSenha.LinkArea = new System.Windows.Forms.LinkArea(0, 19);
-            this.lnkEsqueciSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(233)))));
-            this.lnkEsqueciSenha.Location = new System.Drawing.Point(126, 449);
+            this.lnkEsqueciSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(233)))));
+            this.lnkEsqueciSenha.Location = new System.Drawing.Point(126, 472);
             this.lnkEsqueciSenha.Name = "lnkEsqueciSenha";
-            this.lnkEsqueciSenha.Size = new System.Drawing.Size(194, 25);
+            this.lnkEsqueciSenha.Size = new System.Drawing.Size(170, 23);
             this.lnkEsqueciSenha.TabIndex = 6;
             this.lnkEsqueciSenha.TabStop = true;
             this.lnkEsqueciSenha.Text = "Esqueci minha senha";
@@ -218,6 +221,7 @@
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(8)))), ((int)(((byte)(22)))));
+            this.pnlLogin.Controls.Add(this.lblErro);
             this.pnlLogin.Controls.Add(this.lnkEsqueciSenha);
             this.pnlLogin.Controls.Add(this.btnSair);
             this.pnlLogin.Controls.Add(this.btnEntrar);
@@ -233,6 +237,19 @@
             this.pnlLogin.Size = new System.Drawing.Size(609, 561);
             this.pnlLogin.TabIndex = 99;
             this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin_Paint);
+            // 
+            // lblErro
+            // 
+            this.lblErro.AutoSize = true;
+            this.lblErro.BackColor = System.Drawing.Color.Transparent;
+            this.lblErro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(50)))), ((int)(((byte)(10)))));
+            this.lblErro.Location = new System.Drawing.Point(127, 446);
+            this.lblErro.Name = "lblErro";
+            this.lblErro.Size = new System.Drawing.Size(221, 19);
+            this.lblErro.TabIndex = 99;
+            this.lblErro.Text = "Usuário ou senha inválidos.";
+            this.lblErro.Visible = false;
             // 
             // FrmLogin
             // 
@@ -258,7 +275,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFrase;
         private System.Windows.Forms.Panel pnlBrand;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label lblTitulo;
@@ -273,5 +290,6 @@
         private System.Windows.Forms.LinkLabel lnkEsqueciSenha;
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label lblErro;
     }
 }
