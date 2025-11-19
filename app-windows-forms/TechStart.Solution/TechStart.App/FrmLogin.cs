@@ -17,6 +17,8 @@ namespace TechStart.App
         {
             
             InitializeComponent();
+            toolTip1.SetToolTip(txtUser, "Digite o nome de usuário que você cadastrou.");
+            toolTip1.SetToolTip(txtPassword, "Digite a senha correspondente ao seu usuário.");
 
         }
 
@@ -72,6 +74,11 @@ namespace TechStart.App
         }
 
         private void lnkEsqueciSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void pnlLogin_Paint(object sender, PaintEventArgs e)
         {
 
         }

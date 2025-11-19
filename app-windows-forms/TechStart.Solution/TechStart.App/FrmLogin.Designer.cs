@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBrand = new System.Windows.Forms.Panel();
@@ -43,6 +44,7 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.lnkEsqueciSenha = new System.Windows.Forms.LinkLabel();
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlBrand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLogin.SuspendLayout();
@@ -56,7 +58,7 @@
             this.label1.Location = new System.Drawing.Point(37, 439);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(319, 78);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 94;
             this.label1.Text = "Conectando ideias, impulsionando eventos.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -69,7 +71,7 @@
             this.pnlBrand.Location = new System.Drawing.Point(0, 0);
             this.pnlBrand.Name = "pnlBrand";
             this.pnlBrand.Size = new System.Drawing.Size(375, 561);
-            this.pnlBrand.TabIndex = 1;
+            this.pnlBrand.TabIndex = 92;
             this.pnlBrand.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBrand_Paint);
             // 
             // picLogo
@@ -91,7 +93,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(123, 85);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(359, 45);
-            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.TabIndex = 97;
             this.lblTitulo.Text = "Bem-vindo à TechStart";
             // 
             // lblDoLogin
@@ -102,18 +104,18 @@
             this.lblDoLogin.Location = new System.Drawing.Point(126, 130);
             this.lblDoLogin.Name = "lblDoLogin";
             this.lblDoLogin.Size = new System.Drawing.Size(321, 30);
-            this.lblDoLogin.TabIndex = 1;
+            this.lblDoLogin.TabIndex = 98;
             this.lblDoLogin.Text = "Faça login para acessar o painel";
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblUser.Location = new System.Drawing.Point(127, 189);
+            this.lblUser.Location = new System.Drawing.Point(126, 184);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(62, 20);
-            this.lblUser.TabIndex = 2;
+            this.lblUser.Size = new System.Drawing.Size(81, 25);
+            this.lblUser.TabIndex = 95;
             this.lblUser.Text = "Usuário";
             // 
             // txtUser
@@ -124,17 +126,17 @@
             this.txtUser.Location = new System.Drawing.Point(131, 212);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(351, 35);
-            this.txtUser.TabIndex = 3;
+            this.txtUser.TabIndex = 1;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblPassword.Location = new System.Drawing.Point(127, 272);
+            this.lblPassword.Location = new System.Drawing.Point(126, 267);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(49, 20);
-            this.lblPassword.TabIndex = 4;
+            this.lblPassword.Size = new System.Drawing.Size(66, 25);
+            this.lblPassword.TabIndex = 96;
             this.lblPassword.Text = "Senha";
             // 
             // txtPassword
@@ -145,7 +147,7 @@
             this.txtPassword.Location = new System.Drawing.Point(131, 295);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(351, 35);
-            this.txtPassword.TabIndex = 5;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // chkMostrarSenha
@@ -158,7 +160,7 @@
             this.chkMostrarSenha.Location = new System.Drawing.Point(131, 346);
             this.chkMostrarSenha.Name = "chkMostrarSenha";
             this.chkMostrarSenha.Size = new System.Drawing.Size(103, 27);
-            this.chkMostrarSenha.TabIndex = 6;
+            this.chkMostrarSenha.TabIndex = 3;
             this.chkMostrarSenha.Text = "Mostrar senha";
             this.chkMostrarSenha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkMostrarSenha.UseVisualStyleBackColor = false;
@@ -174,7 +176,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(131, 394);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(160, 45);
-            this.btnEntrar.TabIndex = 7;
+            this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -188,10 +190,10 @@
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(311, 394);
+            this.btnSair.Location = new System.Drawing.Point(362, 394);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(120, 45);
-            this.btnSair.TabIndex = 8;
+            this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.button1_Click);
@@ -204,10 +206,10 @@
             this.lnkEsqueciSenha.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkEsqueciSenha.LinkArea = new System.Windows.Forms.LinkArea(0, 19);
             this.lnkEsqueciSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(233)))));
-            this.lnkEsqueciSenha.Location = new System.Drawing.Point(126, 467);
+            this.lnkEsqueciSenha.Location = new System.Drawing.Point(126, 449);
             this.lnkEsqueciSenha.Name = "lnkEsqueciSenha";
             this.lnkEsqueciSenha.Size = new System.Drawing.Size(194, 25);
-            this.lnkEsqueciSenha.TabIndex = 9;
+            this.lnkEsqueciSenha.TabIndex = 6;
             this.lnkEsqueciSenha.TabStop = true;
             this.lnkEsqueciSenha.Text = "Esqueci minha senha";
             this.lnkEsqueciSenha.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(233)))));
@@ -229,7 +231,8 @@
             this.pnlLogin.Location = new System.Drawing.Point(374, 0);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(609, 561);
-            this.pnlLogin.TabIndex = 2;
+            this.pnlLogin.TabIndex = 99;
+            this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin_Paint);
             // 
             // FrmLogin
             // 
@@ -269,5 +272,6 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.LinkLabel lnkEsqueciSenha;
         private System.Windows.Forms.Panel pnlLogin;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
