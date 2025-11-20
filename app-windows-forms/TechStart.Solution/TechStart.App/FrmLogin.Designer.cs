@@ -44,9 +44,9 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.lnkEsqueciSenha = new System.Windows.Forms.LinkLabel();
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblErro = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pnlBrand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLogin.SuspendLayout();
@@ -240,19 +240,6 @@
             this.pnlLogin.TabIndex = 99;
             this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin_Paint);
             // 
-            // lblErro
-            // 
-            this.lblErro.AutoSize = true;
-            this.lblErro.BackColor = System.Drawing.Color.Transparent;
-            this.lblErro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.lblErro.Location = new System.Drawing.Point(127, 446);
-            this.lblErro.Name = "lblErro";
-            this.lblErro.Size = new System.Drawing.Size(221, 19);
-            this.lblErro.TabIndex = 99;
-            this.lblErro.Text = "Usuário ou senha inválidos.";
-            this.lblErro.Visible = false;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(233)))));
@@ -268,6 +255,19 @@
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // lblErro
+            // 
+            this.lblErro.AutoSize = true;
+            this.lblErro.BackColor = System.Drawing.Color.Transparent;
+            this.lblErro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.lblErro.Location = new System.Drawing.Point(127, 446);
+            this.lblErro.Name = "lblErro";
+            this.lblErro.Size = new System.Drawing.Size(221, 19);
+            this.lblErro.TabIndex = 99;
+            this.lblErro.Text = "Usuário ou senha inválidos.";
+            this.lblErro.Visible = false;
+            // 
             // FrmLogin
             // 
             this.AcceptButton = this.btnEntrar;
@@ -277,6 +277,7 @@
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlBrand);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
