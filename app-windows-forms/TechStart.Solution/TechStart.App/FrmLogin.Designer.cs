@@ -46,6 +46,7 @@
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.lblErro = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pnlBrand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLogin.SuspendLayout();
@@ -208,19 +209,20 @@
             this.lnkEsqueciSenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lnkEsqueciSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkEsqueciSenha.LinkArea = new System.Windows.Forms.LinkArea(0, 19);
-            this.lnkEsqueciSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(233)))));
+            this.lnkEsqueciSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
             this.lnkEsqueciSenha.Location = new System.Drawing.Point(126, 472);
             this.lnkEsqueciSenha.Name = "lnkEsqueciSenha";
             this.lnkEsqueciSenha.Size = new System.Drawing.Size(170, 23);
             this.lnkEsqueciSenha.TabIndex = 6;
             this.lnkEsqueciSenha.TabStop = true;
             this.lnkEsqueciSenha.Text = "Esqueci minha senha";
-            this.lnkEsqueciSenha.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(233)))));
+            this.lnkEsqueciSenha.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(233)))));
             this.lnkEsqueciSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkEsqueciSenha_LinkClicked);
             // 
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(8)))), ((int)(((byte)(22)))));
+            this.pnlLogin.Controls.Add(this.linkLabel1);
             this.pnlLogin.Controls.Add(this.lblErro);
             this.pnlLogin.Controls.Add(this.lnkEsqueciSenha);
             this.pnlLogin.Controls.Add(this.btnSair);
@@ -250,6 +252,21 @@
             this.lblErro.TabIndex = 99;
             this.lblErro.Text = "Usuário ou senha inválidos.";
             this.lblErro.Visible = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(233)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
+            this.linkLabel1.Location = new System.Drawing.Point(126, 506);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(215, 21);
+            this.linkLabel1.TabIndex = 100;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Não tem conta? Cadastre-se";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // FrmLogin
             // 
@@ -291,5 +308,6 @@
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label lblErro;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

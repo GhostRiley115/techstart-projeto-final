@@ -196,5 +196,13 @@ namespace TechStart.App
             // Se não passou em nenhuma condição acima, bloqueia
             e.Handled = true;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            using (FrmCadastroUsuario cadastro = new FrmCadastroUsuario())
+            {
+                cadastro.ShowDialog(); // abre como janela modal
+            }
+        }
     }
 }
