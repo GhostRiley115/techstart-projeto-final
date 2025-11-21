@@ -66,11 +66,6 @@ namespace TechStart.App
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             string usuario = txtUser.Text.Trim();
@@ -166,17 +161,8 @@ namespace TechStart.App
 
         private void lnkEsqueciSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-        }
-
-        private void pnlLogin_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void picLogo_Click(object sender, EventArgs e)
-        {
-
+            FrmEsqueciSenha frm = new FrmEsqueciSenha();
+            frm.ShowDialog(); // modal: usuário resolve e volta pro login
         }
 
         private void txtUser_KeyPress(object sender, KeyPressEventArgs e)

@@ -39,10 +39,10 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblErro = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chkMostrarSenha1 = new System.Windows.Forms.CheckBox();
             this.chkMostrarSenha2 = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNovoUsuario
@@ -80,7 +80,6 @@
             this.lblConfirmarSenha.Size = new System.Drawing.Size(186, 25);
             this.lblConfirmarSenha.TabIndex = 96;
             this.lblConfirmarSenha.Text = "Confirme sua senha";
-            this.lblConfirmarSenha.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNovaSenha
             // 
@@ -103,7 +102,6 @@
             this.txtConfirmarSenha.Size = new System.Drawing.Size(230, 33);
             this.txtConfirmarSenha.TabIndex = 3;
             this.txtConfirmarSenha.UseSystemPasswordChar = true;
-            this.txtConfirmarSenha.TextChanged += new System.EventHandler(this.txtConfirmarSenha_TextChanged);
             // 
             // txtNovoUsuario
             // 
@@ -119,6 +117,7 @@
             // btnSalvar
             // 
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(95, 243);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(100, 30);
@@ -130,6 +129,7 @@
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(265, 246);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 25);
@@ -162,16 +162,6 @@
             this.lblErro.Text = "Nome de usuário já existe.";
             this.lblErro.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(241, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 101;
-            this.pictureBox1.TabStop = false;
-            // 
             // chkMostrarSenha1
             // 
             this.chkMostrarSenha1.Appearance = System.Windows.Forms.Appearance.Button;
@@ -182,7 +172,7 @@
             this.chkMostrarSenha1.Location = new System.Drawing.Point(201, 144);
             this.chkMostrarSenha1.Name = "chkMostrarSenha1";
             this.chkMostrarSenha1.Size = new System.Drawing.Size(91, 23);
-            this.chkMostrarSenha1.TabIndex = 102;
+            this.chkMostrarSenha1.TabIndex = 95;
             this.chkMostrarSenha1.Text = "Mostrar senha";
             this.chkMostrarSenha1.UseVisualStyleBackColor = false;
             this.chkMostrarSenha1.CheckedChanged += new System.EventHandler(this.chkMostrarSenha1_CheckedChanged);
@@ -197,10 +187,20 @@
             this.chkMostrarSenha2.Location = new System.Drawing.Point(201, 210);
             this.chkMostrarSenha2.Name = "chkMostrarSenha2";
             this.chkMostrarSenha2.Size = new System.Drawing.Size(91, 23);
-            this.chkMostrarSenha2.TabIndex = 103;
+            this.chkMostrarSenha2.TabIndex = 94;
             this.chkMostrarSenha2.Text = "Mostrar senha";
             this.chkMostrarSenha2.UseVisualStyleBackColor = false;
             this.chkMostrarSenha2.CheckedChanged += new System.EventHandler(this.chkMostrarSenha2_CheckedChanged);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(241, 55);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(140, 140);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 101;
+            this.picLogo.TabStop = false;
             // 
             // FrmCadastroUsuario
             // 
@@ -221,7 +221,7 @@
             this.Controls.Add(this.lblConfirmarSenha);
             this.Controls.Add(this.lblNovaSenha);
             this.Controls.Add(this.lblNovoUsuario);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -229,7 +229,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TechStart - Cadastro de Usuário";
             this.Load += new System.EventHandler(this.FrmCadastroUsuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,7 +247,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblErro;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.CheckBox chkMostrarSenha1;
         private System.Windows.Forms.CheckBox chkMostrarSenha2;
     }

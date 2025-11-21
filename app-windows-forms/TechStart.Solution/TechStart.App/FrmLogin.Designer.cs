@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.lblFrase = new System.Windows.Forms.Label();
             this.pnlBrand = new System.Windows.Forms.Panel();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblDoLogin = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
@@ -47,9 +46,10 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblErro = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlBrand.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFrase
@@ -62,7 +62,6 @@
             this.lblFrase.Size = new System.Drawing.Size(319, 78);
             this.lblFrase.TabIndex = 94;
             this.lblFrase.Text = "Conectando ideias, impulsionando eventos.";
-            this.lblFrase.Click += new System.EventHandler(this.label1_Click);
             // 
             // pnlBrand
             // 
@@ -75,18 +74,6 @@
             this.pnlBrand.Size = new System.Drawing.Size(375, 561);
             this.pnlBrand.TabIndex = 92;
             this.pnlBrand.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBrand_Paint);
-            // 
-            // picLogo
-            // 
-            this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(-63, -61);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(500, 500);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 1;
-            this.picLogo.TabStop = false;
-            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // lblTitulo
             // 
@@ -238,7 +225,6 @@
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(609, 561);
             this.pnlLogin.TabIndex = 99;
-            this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin_Paint);
             // 
             // linkLabel1
             // 
@@ -249,7 +235,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(126, 506);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(215, 21);
-            this.linkLabel1.TabIndex = 100;
+            this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Não tem conta? Cadastre-se";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
@@ -268,6 +254,17 @@
             this.lblErro.Text = "Usuário ou senha inválidos.";
             this.lblErro.Visible = false;
             // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(-63, -61);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(500, 500);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 1;
+            this.picLogo.TabStop = false;
+            // 
             // FrmLogin
             // 
             this.AcceptButton = this.btnEntrar;
@@ -284,9 +281,9 @@
             this.Text = "TechStart - Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.pnlBrand.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

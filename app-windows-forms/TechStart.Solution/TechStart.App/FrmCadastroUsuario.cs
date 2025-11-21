@@ -31,11 +31,6 @@ namespace TechStart.App
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtNovoUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Permite teclas de controle (Backspace, Delete, Tab, etc.)
@@ -52,11 +47,6 @@ namespace TechStart.App
 
             // Se não passou em nenhuma condição acima, bloqueia
             e.Handled = true;
-        }
-
-        private void txtConfirmarSenha_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void chkMostrarSenha2_CheckedChanged(object sender, EventArgs e)
