@@ -24,3 +24,7 @@ C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Sol
 C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmPrincipal.resources
 C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmCadastroUsuario.resources
 C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmEsqueciSenha.resources
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmConsultaEventos.resources
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmConsultaProdutos.resources
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmEventos.resources
+C:\Users\Clayton\Desktop\techstart-projeto-final\app-windows-forms\TechStart.Solution\TechStart.App\obj\Debug\TechStart.App.FrmProdutos.resources

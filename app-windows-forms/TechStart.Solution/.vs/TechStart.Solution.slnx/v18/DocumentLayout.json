@@ -7,11 +7,20 @@
       "RelativeMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|solutionrelative:techstart.app\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TechStart.App||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\techstart.app\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|solutionrelative:techstart.app\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\techstart.app\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|solutionrelative:techstart.app\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\techstart.app\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|solutionrelative:techstart.app\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\techstart.app\\frmsplash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F853DEDF-B893-4CA5-9FEE-B9B80EB9ADF7}|TechStart.App\\TechStart.App.csproj|solutionrelative:techstart.app\\frmsplash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,31 +30,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TechStart.App",
-              "DocumentMoniker": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\TechStart.App.csproj",
-              "RelativeDocumentMoniker": "TechStart.App\\TechStart.App.csproj",
-              "ToolTip": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\TechStart.App.csproj",
-              "RelativeToolTip": "TechStart.App\\TechStart.App.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-21T21:26:18.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "FrmPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "TechStart.App\\FrmPrincipal.cs",
               "ToolTip": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmPrincipal.cs",
               "RelativeToolTip": "TechStart.App\\FrmPrincipal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAEwJkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T21:22:48.052Z",
+              "WhenOpened": "2025-11-22T02:20:43.129Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "TechStart.App\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmLogin.cs",
+              "RelativeToolTip": "TechStart.App\\FrmLogin.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T00:54:33.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "TechStart.App\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "TechStart.App\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T00:54:13.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmSplash.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmSplash.cs",
+              "RelativeDocumentMoniker": "TechStart.App\\FrmSplash.cs",
+              "ToolTip": "C:\\Users\\Clayton\\Desktop\\techstart-projeto-final\\app-windows-forms\\TechStart.Solution\\TechStart.App\\FrmSplash.cs [Design]",
+              "RelativeToolTip": "TechStart.App\\FrmSplash.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T00:36:12.168Z"
             },
             {
               "$type": "Document",

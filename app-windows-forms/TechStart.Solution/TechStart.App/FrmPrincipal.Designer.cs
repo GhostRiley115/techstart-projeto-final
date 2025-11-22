@@ -52,7 +52,38 @@
             this.mnuExer8 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExer9 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExer10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.lblDesign = new System.Windows.Forms.Label();
+            this.lblRodape = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.toolStripPrincipal = new System.Windows.Forms.ToolStrip();
+            this.tsbEventos = new System.Windows.Forms.ToolStripButton();
+            this.tsbProdutos = new System.Windows.Forms.ToolStripButton();
+            this.tsbExercicios = new System.Windows.Forms.ToolStripButton();
+            this.tsbSair = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pnlLojinha = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblLojinha = new System.Windows.Forms.Label();
+            this.pnlEventos = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblEventos = new System.Windows.Forms.Label();
+            this.pnlNovidades = new System.Windows.Forms.Panel();
+            this.picNovidades = new System.Windows.Forms.PictureBox();
+            this.lblNovidades = new System.Windows.Forms.Label();
+            this.picJujuba = new System.Windows.Forms.PictureBox();
             this.menuPrincipal.SuspendLayout();
+            this.pnlDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.toolStripPrincipal.SuspendLayout();
+            this.pnlLojinha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlEventos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlNovidades.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNovidades)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picJujuba)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPrincipal
@@ -65,7 +96,8 @@
             this.mnuExercicios});
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Name = "menuPrincipal";
-            this.menuPrincipal.Size = new System.Drawing.Size(800, 24);
+            this.menuPrincipal.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.menuPrincipal.Size = new System.Drawing.Size(1284, 24);
             this.menuPrincipal.TabIndex = 0;
             this.menuPrincipal.Text = "menuStrip1";
             // 
@@ -83,15 +115,16 @@
             // 
             this.mnuTrocarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("mnuTrocarUsuario.Image")));
             this.mnuTrocarUsuario.Name = "mnuTrocarUsuario";
-            this.mnuTrocarUsuario.Size = new System.Drawing.Size(180, 22);
+            this.mnuTrocarUsuario.Size = new System.Drawing.Size(149, 22);
             this.mnuTrocarUsuario.Text = "Trocar usuário";
             // 
             // mnuSair
             // 
             this.mnuSair.Image = ((System.Drawing.Image)(resources.GetObject("mnuSair.Image")));
             this.mnuSair.Name = "mnuSair";
-            this.mnuSair.Size = new System.Drawing.Size(180, 22);
+            this.mnuSair.Size = new System.Drawing.Size(149, 22);
             this.mnuSair.Text = "Sair";
+            this.mnuSair.Click += new System.EventHandler(this.mnuSair_Click);
             // 
             // mnuCadastros
             // 
@@ -109,6 +142,7 @@
             this.mnuCadProdutos.Name = "mnuCadProdutos";
             this.mnuCadProdutos.Size = new System.Drawing.Size(180, 22);
             this.mnuCadProdutos.Text = "Produtos da Lojinha";
+            this.mnuCadProdutos.Click += new System.EventHandler(this.mnuCadProdutos_Click);
             // 
             // mnuCadEventos
             // 
@@ -116,6 +150,7 @@
             this.mnuCadEventos.Name = "mnuCadEventos";
             this.mnuCadEventos.Size = new System.Drawing.Size(180, 22);
             this.mnuCadEventos.Text = "Eventos TechStart";
+            this.mnuCadEventos.Click += new System.EventHandler(this.mnuCadEventos_Click);
             // 
             // mnuConsultas
             // 
@@ -131,15 +166,17 @@
             // 
             this.mnuConProdutos.Image = ((System.Drawing.Image)(resources.GetObject("mnuConProdutos.Image")));
             this.mnuConProdutos.Name = "mnuConProdutos";
-            this.mnuConProdutos.Size = new System.Drawing.Size(180, 22);
+            this.mnuConProdutos.Size = new System.Drawing.Size(176, 22);
             this.mnuConProdutos.Text = "Consultar Produtos";
+            this.mnuConProdutos.Click += new System.EventHandler(this.mnuConProdutos_Click);
             // 
             // mnuConEventos
             // 
             this.mnuConEventos.Image = ((System.Drawing.Image)(resources.GetObject("mnuConEventos.Image")));
             this.mnuConEventos.Name = "mnuConEventos";
-            this.mnuConEventos.Size = new System.Drawing.Size(180, 22);
+            this.mnuConEventos.Size = new System.Drawing.Size(176, 22);
             this.mnuConEventos.Text = "Consultar Eventos";
+            this.mnuConEventos.Click += new System.EventHandler(this.mnuConEventos_Click);
             // 
             // mnuAjuda
             // 
@@ -154,8 +191,9 @@
             // 
             this.mnuSobre.Image = ((System.Drawing.Image)(resources.GetObject("mnuSobre.Image")));
             this.mnuSobre.Name = "mnuSobre";
-            this.mnuSobre.Size = new System.Drawing.Size(180, 22);
+            this.mnuSobre.Size = new System.Drawing.Size(104, 22);
             this.mnuSobre.Text = "Sobre";
+            this.mnuSobre.Click += new System.EventHandler(this.mnuSobre_Click);
             // 
             // mnuExercicios
             // 
@@ -179,88 +217,349 @@
             // 
             this.mnuExer1.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer1.Image")));
             this.mnuExer1.Name = "mnuExer1";
-            this.mnuExer1.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer1.Size = new System.Drawing.Size(135, 22);
             this.mnuExer1.Text = "Exercício 1";
             // 
             // mnuExer2
             // 
             this.mnuExer2.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer2.Image")));
             this.mnuExer2.Name = "mnuExer2";
-            this.mnuExer2.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer2.Size = new System.Drawing.Size(135, 22);
             this.mnuExer2.Text = "Exercício 2";
             // 
             // mnuExer3
             // 
             this.mnuExer3.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer3.Image")));
             this.mnuExer3.Name = "mnuExer3";
-            this.mnuExer3.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer3.Size = new System.Drawing.Size(135, 22);
             this.mnuExer3.Text = "Exercício 3";
             // 
             // mnuExer4
             // 
             this.mnuExer4.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer4.Image")));
             this.mnuExer4.Name = "mnuExer4";
-            this.mnuExer4.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer4.Size = new System.Drawing.Size(135, 22);
             this.mnuExer4.Text = "Exercício 4";
             // 
             // mnuExer5
             // 
             this.mnuExer5.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer5.Image")));
             this.mnuExer5.Name = "mnuExer5";
-            this.mnuExer5.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer5.Size = new System.Drawing.Size(135, 22);
             this.mnuExer5.Text = "Exercício 5";
             // 
             // mnuExer6
             // 
             this.mnuExer6.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer6.Image")));
             this.mnuExer6.Name = "mnuExer6";
-            this.mnuExer6.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer6.Size = new System.Drawing.Size(135, 22);
             this.mnuExer6.Text = "Exercício 6";
             // 
             // mnuExer7
             // 
             this.mnuExer7.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer7.Image")));
             this.mnuExer7.Name = "mnuExer7";
-            this.mnuExer7.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer7.Size = new System.Drawing.Size(135, 22);
             this.mnuExer7.Text = "Exercício 7";
             // 
             // mnuExer8
             // 
             this.mnuExer8.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer8.Image")));
             this.mnuExer8.Name = "mnuExer8";
-            this.mnuExer8.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer8.Size = new System.Drawing.Size(135, 22);
             this.mnuExer8.Text = "Exercício 8";
             // 
             // mnuExer9
             // 
             this.mnuExer9.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer9.Image")));
             this.mnuExer9.Name = "mnuExer9";
-            this.mnuExer9.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer9.Size = new System.Drawing.Size(135, 22);
             this.mnuExer9.Text = "Exercício 9";
             // 
             // mnuExer10
             // 
             this.mnuExer10.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer10.Image")));
             this.mnuExer10.Name = "mnuExer10";
-            this.mnuExer10.Size = new System.Drawing.Size(180, 22);
+            this.mnuExer10.Size = new System.Drawing.Size(135, 22);
             this.mnuExer10.Text = "Exercício 10";
+            // 
+            // pnlDashboard
+            // 
+            this.pnlDashboard.AutoSize = true;
+            this.pnlDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(22)))), ((int)(((byte)(40)))));
+            this.pnlDashboard.Controls.Add(this.picJujuba);
+            this.pnlDashboard.Controls.Add(this.lblDesign);
+            this.pnlDashboard.Controls.Add(this.lblRodape);
+            this.pnlDashboard.Controls.Add(this.picLogo);
+            this.pnlDashboard.Controls.Add(this.toolStripPrincipal);
+            this.pnlDashboard.Controls.Add(this.label1);
+            this.pnlDashboard.Controls.Add(this.lblTitulo);
+            this.pnlDashboard.Controls.Add(this.pnlLojinha);
+            this.pnlDashboard.Controls.Add(this.pnlEventos);
+            this.pnlDashboard.Controls.Add(this.pnlNovidades);
+            this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDashboard.Location = new System.Drawing.Point(0, 24);
+            this.pnlDashboard.Name = "pnlDashboard";
+            this.pnlDashboard.Size = new System.Drawing.Size(1284, 787);
+            this.pnlDashboard.TabIndex = 100;
+            this.pnlDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDashboard_Paint);
+            // 
+            // lblDesign
+            // 
+            this.lblDesign.AutoSize = true;
+            this.lblDesign.BackColor = System.Drawing.Color.Transparent;
+            this.lblDesign.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(150)))));
+            this.lblDesign.Location = new System.Drawing.Point(1093, 768);
+            this.lblDesign.Name = "lblDesign";
+            this.lblDesign.Size = new System.Drawing.Size(69, 15);
+            this.lblDesign.TabIndex = 110;
+            this.lblDesign.Text = "Design by";
+            // 
+            // lblRodape
+            // 
+            this.lblRodape.AutoSize = true;
+            this.lblRodape.BackColor = System.Drawing.Color.Transparent;
+            this.lblRodape.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRodape.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(150)))));
+            this.lblRodape.Location = new System.Drawing.Point(461, 766);
+            this.lblRodape.Name = "lblRodape";
+            this.lblRodape.Size = new System.Drawing.Size(362, 18);
+            this.lblRodape.TabIndex = 109;
+            this.lblRodape.Text = "TechStart Júnior • Sistema interno de apoio ao cliente";
+            // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(59, 137);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(111, 112);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 105;
+            this.picLogo.TabStop = false;
+            // 
+            // toolStripPrincipal
+            // 
+            this.toolStripPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbEventos,
+            this.tsbProdutos,
+            this.tsbExercicios,
+            this.tsbSair});
+            this.toolStripPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.toolStripPrincipal.Name = "toolStripPrincipal";
+            this.toolStripPrincipal.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStripPrincipal.Size = new System.Drawing.Size(1284, 25);
+            this.toolStripPrincipal.TabIndex = 104;
+            this.toolStripPrincipal.Text = "toolStrip1";
+            // 
+            // tsbEventos
+            // 
+            this.tsbEventos.Image = ((System.Drawing.Image)(resources.GetObject("tsbEventos.Image")));
+            this.tsbEventos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEventos.Name = "tsbEventos";
+            this.tsbEventos.Size = new System.Drawing.Size(68, 22);
+            this.tsbEventos.Text = "Eventos";
+            this.tsbEventos.Click += new System.EventHandler(this.tsbEventos_Click);
+            // 
+            // tsbProdutos
+            // 
+            this.tsbProdutos.Image = ((System.Drawing.Image)(resources.GetObject("tsbProdutos.Image")));
+            this.tsbProdutos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbProdutos.Name = "tsbProdutos";
+            this.tsbProdutos.Size = new System.Drawing.Size(75, 22);
+            this.tsbProdutos.Text = "Produtos";
+            this.tsbProdutos.Click += new System.EventHandler(this.tsbProdutos_Click);
+            // 
+            // tsbExercicios
+            // 
+            this.tsbExercicios.Image = ((System.Drawing.Image)(resources.GetObject("tsbExercicios.Image")));
+            this.tsbExercicios.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbExercicios.Name = "tsbExercicios";
+            this.tsbExercicios.Size = new System.Drawing.Size(78, 22);
+            this.tsbExercicios.Text = "Exercícios";
+            this.tsbExercicios.Click += new System.EventHandler(this.tsbExercicios_Click);
+            // 
+            // tsbSair
+            // 
+            this.tsbSair.Image = ((System.Drawing.Image)(resources.GetObject("tsbSair.Image")));
+            this.tsbSair.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSair.Name = "tsbSair";
+            this.tsbSair.Size = new System.Drawing.Size(46, 22);
+            this.tsbSair.Text = "Sair";
+            this.tsbSair.Click += new System.EventHandler(this.tsbSair_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(180, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(924, 37);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "Gerencie eventos, produtos da lojinha e confira as novidades da startup.";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(76, 69);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(1133, 65);
+            this.lblTitulo.TabIndex = 99;
+            this.lblTitulo.Text = "Bem-vindo à plataforma interna TechStart Júnior";
+            // 
+            // pnlLojinha
+            // 
+            this.pnlLojinha.Controls.Add(this.pictureBox2);
+            this.pnlLojinha.Controls.Add(this.lblLojinha);
+            this.pnlLojinha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLojinha.Location = new System.Drawing.Point(176, 233);
+            this.pnlLojinha.Name = "pnlLojinha";
+            this.pnlLojinha.Size = new System.Drawing.Size(250, 420);
+            this.pnlLojinha.TabIndex = 106;
+            this.pnlLojinha.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLojinha_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(36, 97);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 220);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 113;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblLojinha
+            // 
+            this.lblLojinha.AutoSize = true;
+            this.lblLojinha.BackColor = System.Drawing.Color.Transparent;
+            this.lblLojinha.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLojinha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
+            this.lblLojinha.Location = new System.Drawing.Point(56, 58);
+            this.lblLojinha.Name = "lblLojinha";
+            this.lblLojinha.Size = new System.Drawing.Size(135, 19);
+            this.lblLojinha.TabIndex = 109;
+            this.lblLojinha.Text = "Lojinha TechStart";
+            // 
+            // pnlEventos
+            // 
+            this.pnlEventos.Controls.Add(this.pictureBox1);
+            this.pnlEventos.Controls.Add(this.lblEventos);
+            this.pnlEventos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlEventos.Location = new System.Drawing.Point(520, 233);
+            this.pnlEventos.Name = "pnlEventos";
+            this.pnlEventos.Size = new System.Drawing.Size(250, 420);
+            this.pnlEventos.TabIndex = 107;
+            this.pnlEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlEventos_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(36, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 113;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblEventos
+            // 
+            this.lblEventos.AutoSize = true;
+            this.lblEventos.BackColor = System.Drawing.Color.Transparent;
+            this.lblEventos.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
+            this.lblEventos.Location = new System.Drawing.Point(55, 58);
+            this.lblEventos.Name = "lblEventos";
+            this.lblEventos.Size = new System.Drawing.Size(140, 19);
+            this.lblEventos.TabIndex = 110;
+            this.lblEventos.Text = "Eventos TechStart";
+            // 
+            // pnlNovidades
+            // 
+            this.pnlNovidades.Controls.Add(this.picNovidades);
+            this.pnlNovidades.Controls.Add(this.lblNovidades);
+            this.pnlNovidades.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlNovidades.Location = new System.Drawing.Point(858, 233);
+            this.pnlNovidades.Name = "pnlNovidades";
+            this.pnlNovidades.Size = new System.Drawing.Size(250, 420);
+            this.pnlNovidades.TabIndex = 108;
+            this.pnlNovidades.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlNovidades_Paint);
+            // 
+            // picNovidades
+            // 
+            this.picNovidades.BackColor = System.Drawing.Color.Transparent;
+            this.picNovidades.Image = ((System.Drawing.Image)(resources.GetObject("picNovidades.Image")));
+            this.picNovidades.Location = new System.Drawing.Point(36, 97);
+            this.picNovidades.Name = "picNovidades";
+            this.picNovidades.Size = new System.Drawing.Size(180, 220);
+            this.picNovidades.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picNovidades.TabIndex = 112;
+            this.picNovidades.TabStop = false;
+            // 
+            // lblNovidades
+            // 
+            this.lblNovidades.AutoSize = true;
+            this.lblNovidades.BackColor = System.Drawing.Color.Transparent;
+            this.lblNovidades.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNovidades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
+            this.lblNovidades.Location = new System.Drawing.Point(83, 58);
+            this.lblNovidades.Name = "lblNovidades";
+            this.lblNovidades.Size = new System.Drawing.Size(85, 19);
+            this.lblNovidades.TabIndex = 111;
+            this.lblNovidades.Text = "Novidades";
+            // 
+            // picJujuba
+            // 
+            this.picJujuba.BackColor = System.Drawing.Color.Transparent;
+            this.picJujuba.Image = ((System.Drawing.Image)(resources.GetObject("picJujuba.Image")));
+            this.picJujuba.Location = new System.Drawing.Point(1168, 748);
+            this.picJujuba.Name = "picJujuba";
+            this.picJujuba.Size = new System.Drawing.Size(35, 35);
+            this.picJujuba.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picJujuba.TabIndex = 111;
+            this.picJujuba.TabStop = false;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(8)))), ((int)(((byte)(22)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1284, 811);
+            this.Controls.Add(this.pnlDashboard);
             this.Controls.Add(this.menuPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuPrincipal;
+            this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TechStart - Painel Principal";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuPrincipal.ResumeLayout(false);
             this.menuPrincipal.PerformLayout();
+            this.pnlDashboard.ResumeLayout(false);
+            this.pnlDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.toolStripPrincipal.ResumeLayout(false);
+            this.toolStripPrincipal.PerformLayout();
+            this.pnlLojinha.ResumeLayout(false);
+            this.pnlLojinha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlEventos.ResumeLayout(false);
+            this.pnlEventos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlNovidades.ResumeLayout(false);
+            this.pnlNovidades.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNovidades)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picJujuba)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,6 +590,27 @@
         private System.Windows.Forms.ToolStripMenuItem mnuExer8;
         private System.Windows.Forms.ToolStripMenuItem mnuExer9;
         private System.Windows.Forms.ToolStripMenuItem mnuExer10;
+        private System.Windows.Forms.Panel pnlDashboard;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStrip toolStripPrincipal;
+        private System.Windows.Forms.ToolStripButton tsbEventos;
+        private System.Windows.Forms.ToolStripButton tsbProdutos;
+        private System.Windows.Forms.ToolStripButton tsbExercicios;
+        private System.Windows.Forms.ToolStripButton tsbSair;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Panel pnlLojinha;
+        private System.Windows.Forms.Panel pnlEventos;
+        private System.Windows.Forms.Panel pnlNovidades;
+        private System.Windows.Forms.Label lblNovidades;
+        private System.Windows.Forms.Label lblEventos;
+        private System.Windows.Forms.Label lblLojinha;
+        private System.Windows.Forms.PictureBox picNovidades;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblRodape;
+        private System.Windows.Forms.Label lblDesign;
+        private System.Windows.Forms.PictureBox picJujuba;
     }
 }
 
