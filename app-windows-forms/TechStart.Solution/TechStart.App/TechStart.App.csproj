@@ -80,6 +80,66 @@
     <Compile Include="FrmEventos.Designer.cs">
       <DependentUpon>FrmEventos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmExercicio1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio1.Designer.cs">
+      <DependentUpon>FrmExercicio1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio10.Designer.cs">
+      <DependentUpon>FrmExercicio10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio2.Designer.cs">
+      <DependentUpon>FrmExercicio2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio3.Designer.cs">
+      <DependentUpon>FrmExercicio3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio4.Designer.cs">
+      <DependentUpon>FrmExercicio4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio5.Designer.cs">
+      <DependentUpon>FrmExercicio5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio6.Designer.cs">
+      <DependentUpon>FrmExercicio6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio7.Designer.cs">
+      <DependentUpon>FrmExercicio7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio8.Designer.cs">
+      <DependentUpon>FrmExercicio8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExercicio9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExercicio9.Designer.cs">
+      <DependentUpon>FrmExercicio9.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +180,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEventos.resx">
       <DependentUpon>FrmEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio1.resx">
+      <DependentUpon>FrmExercicio1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio10.resx">
+      <DependentUpon>FrmExercicio10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio2.resx">
+      <DependentUpon>FrmExercicio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio3.resx">
+      <DependentUpon>FrmExercicio3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio4.resx">
+      <DependentUpon>FrmExercicio4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio5.resx">
+      <DependentUpon>FrmExercicio5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio6.resx">
+      <DependentUpon>FrmExercicio6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio7.resx">
+      <DependentUpon>FrmExercicio7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio8.resx">
+      <DependentUpon>FrmExercicio8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExercicio9.resx">
+      <DependentUpon>FrmExercicio9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

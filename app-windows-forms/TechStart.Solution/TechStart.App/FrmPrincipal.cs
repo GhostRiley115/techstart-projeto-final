@@ -156,5 +156,107 @@ namespace TechStart.App
                 e.Graphics.FillRectangle(brush, rect);
             }
         }
+
+        // ====== EVENTOS DE BOTÃO (CRUD) ======
+
+        private void mnuExer1_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio1 frm = new FrmExercicio1())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;   
+                frm.Show();             
+            }
+        }
+
+        private void mnuExer2_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio2 frm = new FrmExercicio2())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer3_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio3 frm = new FrmExercicio3())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer4_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio4 frm = new FrmExercicio4())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer5_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio5 frm = new FrmExercicio5())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer6_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio6 frm = new FrmExercicio6())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer7_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio7 frm = new FrmExercicio7())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer8_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio8 frm = new FrmExercicio8())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer9_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio9 frm = new FrmExercicio9())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
+
+        private void mnuExer10_Click(object sender, EventArgs e)
+        {
+            using (FrmExercicio10 frm = new FrmExercicio10())
+            {
+                frm.ShowDialog();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+        }
     }
 }

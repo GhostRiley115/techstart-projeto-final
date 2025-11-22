@@ -53,6 +53,7 @@
             this.mnuExer9 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExer10 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.picJujuba = new System.Windows.Forms.PictureBox();
             this.lblDesign = new System.Windows.Forms.Label();
             this.lblRodape = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
@@ -72,9 +73,9 @@
             this.pnlNovidades = new System.Windows.Forms.Panel();
             this.picNovidades = new System.Windows.Forms.PictureBox();
             this.lblNovidades = new System.Windows.Forms.Label();
-            this.picJujuba = new System.Windows.Forms.PictureBox();
             this.menuPrincipal.SuspendLayout();
             this.pnlDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picJujuba)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.toolStripPrincipal.SuspendLayout();
             this.pnlLojinha.SuspendLayout();
@@ -83,7 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlNovidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNovidades)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picJujuba)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPrincipal
@@ -217,71 +217,81 @@
             // 
             this.mnuExer1.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer1.Image")));
             this.mnuExer1.Name = "mnuExer1";
-            this.mnuExer1.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer1.Size = new System.Drawing.Size(180, 22);
             this.mnuExer1.Text = "Exercício 1";
+            this.mnuExer1.Click += new System.EventHandler(this.mnuExer1_Click);
             // 
             // mnuExer2
             // 
             this.mnuExer2.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer2.Image")));
             this.mnuExer2.Name = "mnuExer2";
-            this.mnuExer2.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer2.Size = new System.Drawing.Size(180, 22);
             this.mnuExer2.Text = "Exercício 2";
+            this.mnuExer2.Click += new System.EventHandler(this.mnuExer2_Click);
             // 
             // mnuExer3
             // 
             this.mnuExer3.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer3.Image")));
             this.mnuExer3.Name = "mnuExer3";
-            this.mnuExer3.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer3.Size = new System.Drawing.Size(180, 22);
             this.mnuExer3.Text = "Exercício 3";
+            this.mnuExer3.Click += new System.EventHandler(this.mnuExer3_Click);
             // 
             // mnuExer4
             // 
             this.mnuExer4.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer4.Image")));
             this.mnuExer4.Name = "mnuExer4";
-            this.mnuExer4.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer4.Size = new System.Drawing.Size(180, 22);
             this.mnuExer4.Text = "Exercício 4";
+            this.mnuExer4.Click += new System.EventHandler(this.mnuExer4_Click);
             // 
             // mnuExer5
             // 
             this.mnuExer5.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer5.Image")));
             this.mnuExer5.Name = "mnuExer5";
-            this.mnuExer5.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer5.Size = new System.Drawing.Size(180, 22);
             this.mnuExer5.Text = "Exercício 5";
+            this.mnuExer5.Click += new System.EventHandler(this.mnuExer5_Click);
             // 
             // mnuExer6
             // 
             this.mnuExer6.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer6.Image")));
             this.mnuExer6.Name = "mnuExer6";
-            this.mnuExer6.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer6.Size = new System.Drawing.Size(180, 22);
             this.mnuExer6.Text = "Exercício 6";
+            this.mnuExer6.Click += new System.EventHandler(this.mnuExer6_Click);
             // 
             // mnuExer7
             // 
             this.mnuExer7.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer7.Image")));
             this.mnuExer7.Name = "mnuExer7";
-            this.mnuExer7.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer7.Size = new System.Drawing.Size(180, 22);
             this.mnuExer7.Text = "Exercício 7";
+            this.mnuExer7.Click += new System.EventHandler(this.mnuExer7_Click);
             // 
             // mnuExer8
             // 
             this.mnuExer8.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer8.Image")));
             this.mnuExer8.Name = "mnuExer8";
-            this.mnuExer8.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer8.Size = new System.Drawing.Size(180, 22);
             this.mnuExer8.Text = "Exercício 8";
+            this.mnuExer8.Click += new System.EventHandler(this.mnuExer8_Click);
             // 
             // mnuExer9
             // 
             this.mnuExer9.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer9.Image")));
             this.mnuExer9.Name = "mnuExer9";
-            this.mnuExer9.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer9.Size = new System.Drawing.Size(180, 22);
             this.mnuExer9.Text = "Exercício 9";
+            this.mnuExer9.Click += new System.EventHandler(this.mnuExer9_Click);
             // 
             // mnuExer10
             // 
             this.mnuExer10.Image = ((System.Drawing.Image)(resources.GetObject("mnuExer10.Image")));
             this.mnuExer10.Name = "mnuExer10";
-            this.mnuExer10.Size = new System.Drawing.Size(135, 22);
+            this.mnuExer10.Size = new System.Drawing.Size(180, 22);
             this.mnuExer10.Text = "Exercício 10";
+            this.mnuExer10.Click += new System.EventHandler(this.mnuExer10_Click);
             // 
             // pnlDashboard
             // 
@@ -303,6 +313,17 @@
             this.pnlDashboard.Size = new System.Drawing.Size(1284, 787);
             this.pnlDashboard.TabIndex = 100;
             this.pnlDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDashboard_Paint);
+            // 
+            // picJujuba
+            // 
+            this.picJujuba.BackColor = System.Drawing.Color.Transparent;
+            this.picJujuba.Image = ((System.Drawing.Image)(resources.GetObject("picJujuba.Image")));
+            this.picJujuba.Location = new System.Drawing.Point(1168, 748);
+            this.picJujuba.Name = "picJujuba";
+            this.picJujuba.Size = new System.Drawing.Size(35, 35);
+            this.picJujuba.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picJujuba.TabIndex = 111;
+            this.picJujuba.TabStop = false;
             // 
             // lblDesign
             // 
@@ -515,17 +536,6 @@
             this.lblNovidades.TabIndex = 111;
             this.lblNovidades.Text = "Novidades";
             // 
-            // picJujuba
-            // 
-            this.picJujuba.BackColor = System.Drawing.Color.Transparent;
-            this.picJujuba.Image = ((System.Drawing.Image)(resources.GetObject("picJujuba.Image")));
-            this.picJujuba.Location = new System.Drawing.Point(1168, 748);
-            this.picJujuba.Name = "picJujuba";
-            this.picJujuba.Size = new System.Drawing.Size(35, 35);
-            this.picJujuba.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picJujuba.TabIndex = 111;
-            this.picJujuba.TabStop = false;
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,6 +557,7 @@
             this.menuPrincipal.PerformLayout();
             this.pnlDashboard.ResumeLayout(false);
             this.pnlDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picJujuba)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.toolStripPrincipal.ResumeLayout(false);
             this.toolStripPrincipal.PerformLayout();
@@ -559,7 +570,6 @@
             this.pnlNovidades.ResumeLayout(false);
             this.pnlNovidades.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNovidades)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picJujuba)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
