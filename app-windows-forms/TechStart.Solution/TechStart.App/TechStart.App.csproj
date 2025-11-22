@@ -160,6 +160,7 @@
     <None Include="Resources\Iniciando ambiente TechStart....gif" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dados\eventos.txt" />
     <Content Include="dados\Usuarios.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
